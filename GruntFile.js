@@ -89,8 +89,8 @@ module.exports = function (grunt)
 	grunt.registerTask('default', 'Default Task Alias', ['build']);
 
 	grunt.registerTask('build', 'Build the application', 
-		['sass:dev',
-		'concat:dist', 'ngAnnotate:dist', 'concat:css', 'concat:move', 'concat:map', 
+		[
+			'concat:dist','concat:deps', 'ngAnnotate:dist', 'concat:css', 'concat:move', 'concat:map',
 		'ngdocs'
 		]);
 }

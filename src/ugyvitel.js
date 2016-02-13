@@ -49,4 +49,4 @@ var app = angular.module('MyApp', ['ngRoute'])
 	}
 })
 
-alert('teszt');
+alert('t2');
